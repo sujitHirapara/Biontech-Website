@@ -1,0 +1,30 @@
+header{
+    @apply sticky top-0 left-0 w-full z-10 transition;
+    &.header-fixed{
+        @apply fixed;
+    }
+    .navbar-menu{
+        @apply flex-grow hidden md:block;
+        @media (max-width: 768px){
+            @apply fixed top-0 left-0 w-full h-full md:h-auto p-4 pt-1.5 bg-white border-t-[16px] border-primary-400;
+        }
+        ul{
+            @media (max-width: 768px){
+                @apply mt-6;
+            }
+            li{
+                a{
+                    &:before{
+                        @apply content-[''] w-12 h-1 rounded-br-xl bg-secondary-100 absolute left-0 -bottom-1 hidden;      
+                    }
+                    &.active{
+                        @apply font-semibold;
+                        &:before{
+                            @apply block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

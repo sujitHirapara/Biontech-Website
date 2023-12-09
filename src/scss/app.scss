@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//fancy box
+@import "~@fancyapps/fancybox";
+
+//slick
+@import "~slick-carousel/slick/slick";
+@import "~slick-carousel/slick/slick-theme";
+
+@import 'fonts.scss';
+@import 'global.scss';
+@import 'header.scss';
+@import 'page.scss';
+// body{
+//   @apply h-screen bg-blue-500;
+// }
