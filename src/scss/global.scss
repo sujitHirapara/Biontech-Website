@@ -2,3 +2,22 @@ body,
 html {
     font-family: 'Poppins', sans-serif;
 }
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1012px;
+  }
+}
+@media (min-width: 1536px){
+  .container{
+    max-width: 1012px;
+  }
+}
+
+img{
+    @apply max-w-full h-auto;
+}
+
+.btn{
+    @apply py-3 px-4 md:px-6 bg-primary rounded text-sm font-light text-white inline-block transition hover:bg-black duration-500;
+}

@@ -1,27 +1,28 @@
 header{
-    @apply sticky top-0 left-0 w-full z-10 transition;
+    @apply fixed top-0 left-0 w-full py-10 z-10 transition-all duration-500;
     &.header-fixed{
-        @apply fixed;
+        @apply py-4 bg-black;
     }
     .navbar-menu{
         @apply flex-grow hidden md:block;
-        @media (max-width: 768px){
-            @apply fixed top-0 left-0 w-full h-full md:h-auto p-4 pt-1.5 bg-white border-t-[16px] border-primary-400;
+        @media (max-width: 767px){
+            @apply fixed top-0 left-0 w-full h-full md:h-auto p-4 pt-1.5 bg-black;
         }
         ul{
-            @media (max-width: 768px){
+            @media (max-width: 767px){
                 @apply mt-6;
             }
             li{
                 a{
-                    &:before{
-                        @apply content-[''] w-12 h-1 rounded-br-xl bg-secondary-100 absolute left-0 -bottom-1 hidden;      
-                    }
+                    @apply text-sm text-white hover:text-primary font-light relative tracking-wide transition;
+                    // &:before{
+                    //     @apply content-[''] w-12 h-1 rounded-br-xl bg-secondary absolute left-0 -bottom-1 hidden;      
+                    // }
                     &.active{
-                        @apply font-semibold;
-                        &:before{
-                            @apply block;
-                        }
+                        // @apply;
+                        // &:before{
+                        //     @apply block;
+                        // }
                     }
                 }
             }

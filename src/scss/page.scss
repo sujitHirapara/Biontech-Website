@@ -1,6 +1,6 @@
 .hero-section{
     background: radial-gradient(circle, #343151 0%, #262445 100%);
-    @apply pt-8 lg:py-32 relative;
+    @apply relative;
 }
 
 .title-shape{
@@ -200,7 +200,7 @@
 .filter-tab-nav{
     .filter-tab-btn{
         &.active{
-            @apply bg-secondary-300 text-primary-500;
+            @apply bg-secondary text-primary;
         }
     }
 }
