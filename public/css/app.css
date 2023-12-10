@@ -489,6 +489,9 @@ video {
 .h-full{
   height: 100%;
 }
+.h-9{
+  height: 2.25rem;
+}
 .max-h-7{
   max-height: 1.75rem;
 }
@@ -500,9 +503,6 @@ video {
 }
 .max-h-14{
   max-height: 3.5rem;
-}
-.max-h-6{
-  max-height: 1.5rem;
 }
 .max-h-5{
   max-height: 1.25rem;
@@ -518,6 +518,9 @@ video {
 }
 .w-auto{
   width: auto;
+}
+.w-9{
+  width: 2.25rem;
 }
 .w-4{
   width: 1rem;
@@ -582,9 +585,6 @@ video {
 .gap-3{
   gap: 0.75rem;
 }
-.gap-10{
-  gap: 2.5rem;
-}
 .gap-5{
   gap: 1.25rem;
 }
@@ -617,6 +617,9 @@ video {
 .rounded-full{
   border-radius: 9999px;
 }
+.border-2{
+  border-width: 2px;
+}
 .border-b{
   border-bottom-width: 1px;
 }
@@ -631,6 +634,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-primary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(168 30 49 / var(--tw-bg-opacity));
+}
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -643,13 +650,13 @@ video {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .py-4{
   padding-top: 1rem;
@@ -667,6 +674,10 @@ video {
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .text-base{
   font-size: 1rem;
@@ -696,6 +707,12 @@ video {
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.underline{
+  text-decoration-line: underline;
+}
+.underline-offset-2{
+  text-underline-offset: 2px;
 }
 .transition-all{
   transition-property: all;
@@ -1925,6 +1942,20 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+::-moz-selection{
+  --tw-bg-opacity: 1;
+  background-color: rgb(168 30 49 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+::selection{
+  --tw-bg-opacity: 1;
+  background-color: rgb(168 30 49 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 @media (min-width: 1536px) {
   .container {
     max-width: 1300px;
@@ -2213,6 +2244,10 @@ header .navbar-menu ul li a:hover{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.group:hover .group-hover\:ml-1{
+  margin-left: 0.25rem;
+}
+
 @media not all and (min-width: 768px){
   .max-md\:mt-3{
     margin-top: 0.75rem;
@@ -2283,9 +2318,9 @@ header .navbar-menu ul li a:hover{
   .md\:gap-12{
     gap: 3rem;
   }
-  .md\:object-center{
-    -o-object-position: center;
-       object-position: center;
+  .md\:object-top{
+    -o-object-position: top;
+       object-position: top;
   }
   .md\:py-10{
     padding-top: 2.5rem;
@@ -2313,6 +2348,10 @@ header .navbar-menu ul li a:hover{
   }
   .lg\:gap-8{
     gap: 2rem;
+  }
+  .lg\:py-14{
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
   .lg\:pr-10{
     padding-right: 2.5rem;

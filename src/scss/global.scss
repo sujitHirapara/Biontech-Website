@@ -3,6 +3,10 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
+::selection{
+    @apply bg-primary text-white;
+}
+
 // @media (min-width: 1280px){
 //   .container{
 //     max-width: 1300px;
