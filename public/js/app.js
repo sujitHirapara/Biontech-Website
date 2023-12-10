@@ -5705,14 +5705,52 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.symptoms-slider').slick({
   }]
 });
 
-// Testimonial Slider
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('.user-avatar-slider').slick({
-  slidesToShow: 1,
-  arrows: false,
-  asNavFor: '.testimonial-slider',
-  autoplay: true,
-  autoplaySpeed: 2000,
-  infinite: true
+// Hero Slider
+// $('.hero-slider').slick({
+//     slidesToShow: 1,
+//     dots: true,
+//     autoplay: false,
+//     autoplaySpeed: 2000,
+//     infinite: true,
+// });
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function ($) {
+  var sliderTimer = 5000;
+  var beforeEnd = 500;
+  var $imageSlider = $('.hero-slider');
+  $imageSlider.slick({
+    autoplay: true,
+    autoplaySpeed: sliderTimer,
+    speed: 1000,
+    arrows: true,
+    dots: true,
+    // adaptiveHeight: true,
+    pauseOnFocus: false,
+    pauseOnHover: false
+  });
+  function progressBar() {
+    $('.slider-progress').find('span').removeAttr('style');
+    $('.slider-progress').find('span').removeClass('active');
+    setTimeout(function () {
+      $('.slider-progress').find('span').css('transition-duration', sliderTimer / 1000 + 's').addClass('active');
+    }, 100);
+  }
+  progressBar();
+  $imageSlider.on('beforeChange', function (e, slick) {
+    progressBar();
+  });
+  $imageSlider.on('afterChange', function (e, slick, nextSlide) {
+    titleAnim(nextSlide);
+  });
+
+  // Title Animation JS
+  function titleAnim(ele) {
+    $imageSlider.find('.slick-current').find('h1').addClass('show');
+    setTimeout(function () {
+      $imageSlider.find('.slick-current').find('h1').removeClass('show');
+    }, sliderTimer - beforeEnd);
+  }
+  titleAnim();
 });
 
 // tab filter js
