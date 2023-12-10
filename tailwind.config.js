@@ -46,7 +46,7 @@ module.exports = {
           'success': '#78BF84',
           'info': '#E67C7D',
           primary: '#A81E31',
-          secondary: '#D794C6',
+          secondary: '#fde08a',
       }),
       dropShadow: {
         'card' : '5px 5px 20px rgba(129, 99, 214, 0.06)',

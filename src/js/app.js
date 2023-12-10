@@ -17,7 +17,7 @@ $(window).scroll(function () {
 });
 
 $(".navbar-toggler").click(function () {
-    $('.navbar-menu').slideToggle(500);
+    $('.navbar-menu').slideToggle(400);
     $('body').toggleClass('overflow-hidden');
 });
 

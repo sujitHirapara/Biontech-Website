@@ -5669,7 +5669,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).scroll(function () {
   if (scroll >= 120) sticky.addClass("header-fixed");else sticky.removeClass("header-fixed");
 });
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(".navbar-toggler").click(function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.navbar-menu').slideToggle(500);
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.navbar-menu').slideToggle(400);
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('body').toggleClass('overflow-hidden');
 });
 
