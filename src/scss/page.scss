@@ -158,3 +158,39 @@
 .slider-progress span.active{
 	width: 100%;
 }
+
+.slick-dots-bottom{
+    .slick-dots{
+        @apply bg-transparent p-0 bottom-0 left-1/2 -translate-x-1/2 justify-center gap-4;
+        li{
+            &.slick-active{
+                button{
+                    @apply bg-primary w-3.5 h-3.5;
+                }
+            }
+            button{
+                @apply bg-gray-dark w-2.5 h-2.5 opacity-100;
+            }
+        }
+    }
+}
+
+.slick-vertical-center-arrow{
+    .slick-arrow{
+        @apply w-8 h-8 border-2 border-solid border-black rounded-full bottom-auto top-14 hover:opacity-75;
+        &.slick-prev{
+            @apply right-auto left-0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg>');
+            background-size: 20px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        &.slick-next{
+            @apply right-0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>');
+            background-size: 20px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}

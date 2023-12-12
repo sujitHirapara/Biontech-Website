@@ -25,3 +25,18 @@ img{
 .btn{
     @apply py-3 px-4 md:px-6 bg-primary rounded text-sm font-light text-white inline-block transition hover:bg-black duration-500;
 }
+
+.section-padding{
+  @apply py-10 md:py-28;
+}
+.section-sm-padding{
+  @apply py-10 md:py-16;
+}
+
+.text-content{
+  @apply text-sm md:text-base leading-normal font-medium;
+}
+
+.section-heading{
+  @apply text-4xl font-bold text-black mb-6;
+}
