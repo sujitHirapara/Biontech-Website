@@ -161,7 +161,7 @@
 
 .slick-dots-bottom{
     .slick-dots{
-        @apply bg-transparent p-0 bottom-0 left-1/2 -translate-x-1/2 justify-center gap-4;
+        @apply h-auto bg-transparent p-0 bottom-0 left-1/2 -translate-x-1/2 justify-center gap-4;
         li{
             &.slick-active{
                 button{
@@ -191,6 +191,111 @@
             background-size: 20px;
             background-position: center;
             background-repeat: no-repeat;
+        }
+    }
+}
+
+.timelineSlider {
+    .slick-track {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.timelineSliderNav {
+    width: 100%;
+    .slick-list {
+        display: flex;
+        width: 100%;
+        .slick-track{
+            width: 100% !important;
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            &:before{
+                content: "";
+                display: block;
+                width: 100%;
+                height: 15px;
+                border-radius: 15px;
+                background: linear-gradient(90deg, rgba(96,15,41,1) 10%, rgba(113,42,171,1) 22%, rgba(0,83,104,1) 34%, rgba(106,194,0,1) 47%, rgba(239,213,0,1) 62%, rgba(247,148,37,1) 76%, rgba(236,53,87,1) 90%);
+                position: absolute;
+                top: 14px;
+                left: 0;
+            }
+            &:after{
+                display: none;
+            }
+        }
+        .is-active {
+            color: #917412;
+            &:before {
+                content: "";
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: #fff;
+                border-radius: 10px;
+                position: absolute;
+                top: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 9;
+            }
+        } 
+        .slick-slide {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+    }
+}
+
+#timelineSliderNavTopDates {
+    display: flex;
+    margin-left: 10%;
+    position: relative;
+    top: 20px;
+
+    span {
+        margin-right: 25%;
+        position: relative;
+        padding-top: 5px;
+
+        &:before {
+            content: '';
+            display: block;
+            height: 20px;
+            width: 1px;
+            position: absolute;
+            bottom: -15px;
+            background: black;
+            left: 18px;
+        }
+    }
+}
+
+#timelineSliderNavBottomDates {
+    display: flex;
+    margin-left: 25%;
+    position: relative;
+    top: -50px;
+
+    span {
+        margin-right: 32%;
+        position: relative;
+        padding-top: 5px;
+
+        &:before {
+            content: '';
+            display: block;
+            height: 20px;
+            width: 1px;
+            position: absolute;
+            top: -15px;
+            background: black;
+            left: 18px;
         }
     }
 }
