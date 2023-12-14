@@ -38,5 +38,15 @@ img{
 }
 
 .section-heading{
-  @apply text-4xl font-bold text-black mb-6;
+  @apply text-2xl md:text-4xl font-bold mb-6;
+}
+
+.theme-input{
+  @apply w-full p-5 text-sm text-black placeholder:text-black/40 focus:ring-0 focus:outline-none outline-none appearance-none;
+}
+select.theme-input{
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>');
+  background-size: 20px;
+  background-position: calc(100% - 20px) center;
+  background-repeat: no-repeat;
 }

@@ -24,6 +24,7 @@ module.exports = {
             DEFAULT: "#999999",
             "light": "#E6E6E6",
             "dark": "#CCCCCC",
+            "true": "#f5f5f5",
           }
       },
       dropShadow: {
