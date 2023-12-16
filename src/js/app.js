@@ -61,14 +61,15 @@ $('.clients-slider').slick({
     ]
 });
 
-// Hero Slider
-// $('.hero-slider').slick({
-//     slidesToShow: 1,
-//     dots: true,
-//     autoplay: false,
-//     autoplaySpeed: 2000,
-//     infinite: true,
-// });
+// Product Slider
+$('.product-slider').slick({
+    slidesToShow: 1,
+    dots: false,
+    arrows: false,
+    // autoplay: true,
+    // autoplaySpeed: 2000,
+    infinite: true,
+});
 
 $(document).ready(function($) {
 	var sliderTimer = 5000;

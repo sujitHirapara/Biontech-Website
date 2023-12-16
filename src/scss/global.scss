@@ -50,3 +50,12 @@ select.theme-input{
   background-position: calc(100% - 20px) center;
   background-repeat: no-repeat;
 }
+
+.slick-h-full{
+  [class*="slick-"]{
+    @apply h-full;
+    > div{
+      @apply h-full;
+    }
+  }
+}

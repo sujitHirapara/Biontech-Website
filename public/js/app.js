@@ -5708,15 +5708,15 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.clients-slider').slick({
   }]
 });
 
-// Hero Slider
-// $('.hero-slider').slick({
-//     slidesToShow: 1,
-//     dots: true,
-//     autoplay: false,
-//     autoplaySpeed: 2000,
-//     infinite: true,
-// });
-
+// Product Slider
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('.product-slider').slick({
+  slidesToShow: 1,
+  dots: false,
+  arrows: false,
+  // autoplay: true,
+  // autoplaySpeed: 2000,
+  infinite: true
+});
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function ($) {
   var sliderTimer = 5000;
   var beforeEnd = 500;
