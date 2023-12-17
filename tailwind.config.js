@@ -21,6 +21,7 @@ module.exports = {
           'info': '#E67C7D',
           primary: '#A81E31',
           secondary: '#fde08a',
+          "third": "#005DAD",
           gray: {
             DEFAULT: "#999999",
             "light": "#E6E6E6",
