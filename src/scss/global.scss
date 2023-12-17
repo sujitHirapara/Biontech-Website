@@ -7,6 +7,26 @@ html {
     @apply bg-primary text-white;
 }
 
+/* width */
+::-webkit-scrollbar {
+  @apply w-2.5 h-2.5;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 // @media (min-width: 1280px){
 //   .container{
 //     max-width: 1300px;

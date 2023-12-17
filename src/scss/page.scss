@@ -303,3 +303,42 @@
 .product-slider .slick-track{
     @apply flex items-center;
 }
+
+.scrollbar-section{
+    .section-padding{
+        &:nth-child(1){
+            background: radial-gradient(circle, rgba(117,102,191,1) 0%, rgba(80,58,164,1) 100%);
+        }
+        &:nth-child(2){
+            background: radial-gradient(circle, #7696CF 0%, #2E468E 100%);
+        }
+        &:nth-child(3){
+            background: radial-gradient(circle, #6CB9DF 0%, #318CC5 100%);
+        }
+        &:nth-child(4){
+            background: radial-gradient(circle, #62CD5F 0%, #0FA22D 100%);
+        }
+        &:nth-child(5){
+            background: radial-gradient(circle, #82D24D 0%, #51BB08 100%);
+        }
+        &:nth-child(6){
+            background: radial-gradient(circle, #FFD959 0%, #F2A800 100%);
+        }
+        &:nth-child(7){
+            background: radial-gradient(circle, #FDEA72 0%, #FACB00 100%);
+        }
+        &:nth-child(8){
+            background: radial-gradient(circle, #FED856 0%, #F2A800 100%);
+        }
+        &:nth-child(9){
+            background: radial-gradient(circle, #FDEA72 0%, #FACB00 100%);
+        }
+    }
+    &::-webkit-scrollbar{
+        @apply w-0 h-0;
+    }
+    &::-webkit-scrollbar-track,
+    &::-webkit-scrollbar-thumb{
+        @apply bg-transparent;
+    }
+}
