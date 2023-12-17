@@ -3309,6 +3309,15 @@ header .navbar-menu ul li a:hover{
   .max-sm\:hidden{
     display: none;
   }
+  .max-sm\:h-80{
+    height: 20rem;
+  }
+  .max-sm\:h-96{
+    height: 24rem;
+  }
+  .max-sm\:min-h-screen{
+    min-height: 100vh;
+  }
   .max-sm\:flex-col{
     flex-direction: column;
   }
@@ -3326,6 +3335,9 @@ header .navbar-menu ul li a:hover{
   }
   .sm\:col-span-2{
     grid-column: span 2 / span 2;
+  }
+  .sm\:min-h-screen{
+    min-height: 100vh;
   }
   .sm\:w-28{
     width: 7rem;
@@ -3459,6 +3471,10 @@ header .navbar-menu ul li a:hover{
   .md\:object-top{
     -o-object-position: top;
        object-position: top;
+  }
+  .md\:object-center{
+    -o-object-position: center;
+       object-position: center;
   }
   .md\:p-10{
     padding: 2.5rem;
@@ -3607,6 +3623,9 @@ header .navbar-menu ul li a:hover{
 @media (min-width: 1280px){
   .xl\:-mt-20{
     margin-top: -5rem;
+  }
+  .xl\:mb-32{
+    margin-bottom: 8rem;
   }
   .xl\:h-\[500px\]{
     height: 500px;
