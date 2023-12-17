@@ -560,6 +560,9 @@ video {
 .mt-12{
   margin-top: 3rem;
 }
+.mt-14{
+  margin-top: 3.5rem;
+}
 .mt-2{
   margin-top: 0.5rem;
 }
@@ -571,12 +574,6 @@ video {
 }
 .mt-5{
   margin-top: 1.25rem;
-}
-.mt-40{
-  margin-top: 10rem;
-}
-.mt-14{
-  margin-top: 3.5rem;
 }
 .block{
   display: block;
@@ -1168,14 +1165,11 @@ video {
 .pl-4{
   padding-left: 1rem;
 }
-.pt-8{
-  padding-top: 2rem;
-}
-.pt-10{
-  padding-top: 2.5rem;
-}
 .pt-16{
   padding-top: 4rem;
+}
+.pt-8{
+  padding-top: 2rem;
 }
 .text-center{
   text-align: center;
@@ -1253,13 +1247,13 @@ video {
   --tw-text-opacity: 1;
   color: rgb(168 30 49 / var(--tw-text-opacity));
 }
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
 .text-third{
   --tw-text-opacity: 1;
   color: rgb(0 93 173 / var(--tw-text-opacity));
+}
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .underline{
   text-decoration-line: underline;
@@ -2855,6 +2849,8 @@ header .navbar-menu ul li a:hover{
 .slick-indicators .slick-arrow {
   height: 20px;
   width: 20px;
+  border: 1px solid #fff;
+  border-radius: 100%;
   top: auto;
   bottom: 12px;
   transform: none;
@@ -2866,13 +2862,15 @@ header .navbar-menu ul li a:hover{
 .slick-indicators .slick-arrow.slick-prev {
   left: auto;
   right: 120px;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23ffffff" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 9l-3 3m0 0l3 3m-3-3h7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>');
-  background-size: 20px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23ffffff" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg>');
+  background-size: 16px;
+  background-position: center;
 }
 .slick-indicators .slick-arrow.slick-next {
   right: 90px;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23ffffff" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>');
-  background-size: 20px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23ffffff" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>');
+  background-size: 16px;
+  background-position: center;
 }
 
 .slick-arrow-bottom-center .slick-arrow {
@@ -3177,6 +3175,9 @@ header .navbar-menu ul li a:hover{
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.hover\:underline:hover{
+  text-decoration-line: underline;
 }
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
