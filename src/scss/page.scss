@@ -346,3 +346,34 @@
         @apply bg-transparent;
     }
 }
+
+.product-slideshow{
+    .slick-list{
+        // @apply overflow-visible;
+        .slick-slide{
+            @apply transition-all duration-500;
+            .slider-row{
+                @apply transition-all duration-500;
+            }
+            &.slick-active{
+                .slider-row{
+                    @apply xl:pl-10;
+                }
+                + *{
+                    .slider-row{
+                        @apply pl-0 xl:pl-20;
+                    }
+                    .product-content{
+                        @apply block;
+                    }
+                }
+                .product-thumb{
+                    // @apply w-80 h-80;
+                    // img{
+                    //     @apply h-32;
+                    // }
+                }
+            }
+        }
+    }
+}

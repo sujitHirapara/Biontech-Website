@@ -581,6 +581,9 @@ video {
 .inline-block{
   display: inline-block;
 }
+.\!flex{
+  display: flex !important;
+}
 .flex{
   display: flex;
 }
@@ -598,6 +601,9 @@ video {
 }
 .h-14{
   height: 3.5rem;
+}
+.h-16{
+  height: 4rem;
 }
 .h-28{
   height: 7rem;
@@ -677,6 +683,9 @@ video {
 .w-12{
   width: 3rem;
 }
+.w-16{
+  width: 4rem;
+}
 .w-20{
   width: 5rem;
 }
@@ -721,6 +730,9 @@ video {
 }
 .max-w-\[200px\]{
   max-width: 200px;
+}
+.max-w-\[250px\]{
+  max-width: 250px;
 }
 .max-w-\[370px\]{
   max-width: 370px;
@@ -1139,6 +1151,10 @@ video {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -1254,9 +1270,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.underline{
-  text-decoration-line: underline;
 }
 .underline-offset-2{
   text-underline-offset: 2px;
@@ -3108,6 +3121,33 @@ header .navbar-menu ul li a:hover{
 .scrollbar-section::-webkit-scrollbar-track, .scrollbar-section::-webkit-scrollbar-thumb{
   background-color: transparent;
 }
+
+.product-slideshow .slick-list .slick-slide{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+.product-slideshow .slick-list .slick-slide .slider-row{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+@media (min-width: 1280px){
+  .product-slideshow .slick-list .slick-slide.slick-active .slider-row{
+    padding-left: 2.5rem;
+  }
+}
+.product-slideshow .slick-list .slick-slide.slick-active + * .slider-row{
+  padding-left: 0px;
+}
+@media (min-width: 1280px){
+  .product-slideshow .slick-list .slick-slide.slick-active + * .slider-row{
+    padding-left: 5rem;
+  }
+}
+.product-slideshow .slick-list .slick-slide.slick-active + * .product-content{
+  display: block;
+}
 .before\:absolute::before{
   content: var(--tw-content);
   position: absolute;
@@ -3324,6 +3364,14 @@ header .navbar-menu ul li a:hover{
   .sm\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  .sm\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .sm\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 @media (min-width: 768px){
   .md\:absolute{
@@ -3360,6 +3408,9 @@ header .navbar-menu ul li a:hover{
   .md\:h-28{
     height: 7rem;
   }
+  .md\:h-36{
+    height: 9rem;
+  }
   .md\:h-80{
     height: 20rem;
   }
@@ -3390,6 +3441,9 @@ header .navbar-menu ul li a:hover{
   .md\:w-28{
     width: 7rem;
   }
+  .md\:w-36{
+    width: 9rem;
+  }
   .md\:w-80{
     width: 20rem;
   }
@@ -3419,6 +3473,9 @@ header .navbar-menu ul li a:hover{
   }
   .md\:justify-between{
     justify-content: space-between;
+  }
+  .md\:gap-10{
+    gap: 2.5rem;
   }
   .md\:gap-12{
     gap: 3rem;
@@ -3457,6 +3514,9 @@ header .navbar-menu ul li a:hover{
   }
   .md\:p-5{
     padding: 1.25rem;
+  }
+  .md\:p-6{
+    padding: 1.5rem;
   }
   .md\:p-8{
     padding: 2rem;

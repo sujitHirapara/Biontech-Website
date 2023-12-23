@@ -1,8 +1,15 @@
 import $ from "jquery";
 import 'slick-carousel';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 window.$ = $;
 window.jQuery = jQuery;
+
+AOS.init({
+  once: false,
+  duration: 600,
+});
 
 // fancy box
 require("@fancyapps/fancybox");
@@ -241,3 +248,28 @@ $(document).ready(function() {
   //       // }
   // });
 });  
+
+// Product Slideshow
+const slider = $(".slider-item");
+slider
+  .slick({
+    arrows: false,
+    dots: false,
+    vertical: true,
+    verticalSwiping: true,
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    // centerMode: true,
+    // centerPadding: '60px',
+  });
+
+slider.on('wheel', (function(e) {
+  e.preventDefault();
+
+  if (e.originalEvent.deltaY < 0) {
+    $(this).slick('slickPrev');
+  } else {
+    $(this).slick('slickNext');
+  }
+}));
