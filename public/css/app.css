@@ -716,6 +716,9 @@ video {
 .w-full{
   width: 100%;
 }
+.w-7{
+  width: 1.75rem;
+}
 .max-w-2xl{
   max-width: 42rem;
 }
@@ -1245,9 +1248,6 @@ video {
 }
 .font-semibold{
   font-weight: 600;
-}
-.font-black{
-  font-weight: 900;
 }
 .\!leading-snug{
   line-height: 1.375 !important;
@@ -3507,6 +3507,10 @@ header .navbar-menu ul li a:hover{
   }
   .md\:border-r{
     border-right-width: 1px;
+  }
+  .md\:object-bottom{
+    -o-object-position: bottom;
+       object-position: bottom;
   }
   .md\:object-center{
     -o-object-position: center;
