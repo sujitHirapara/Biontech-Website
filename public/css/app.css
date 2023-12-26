@@ -1100,6 +1100,10 @@ video {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.object-bottom{
+  -o-object-position: bottom;
+     object-position: bottom;
+}
 .object-top{
   -o-object-position: top;
      object-position: top;
@@ -1241,6 +1245,9 @@ video {
 }
 .font-semibold{
   font-weight: 600;
+}
+.font-black{
+  font-weight: 900;
 }
 .\!leading-snug{
   line-height: 1.375 !important;
