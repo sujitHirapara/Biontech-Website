@@ -704,6 +704,9 @@ video {
 .w-60{
   width: 15rem;
 }
+.w-7{
+  width: 1.75rem;
+}
 .w-8{
   width: 2rem;
 }
@@ -715,9 +718,6 @@ video {
 }
 .w-full{
   width: 100%;
-}
-.w-7{
-  width: 1.75rem;
 }
 .max-w-2xl{
   max-width: 42rem;
@@ -2774,7 +2774,7 @@ header .navbar-menu ul li a{
 }
 header .navbar-menu ul li a:hover{
   --tw-text-opacity: 1;
-  color: rgb(253 224 138 / var(--tw-text-opacity));
+  color: rgb(168 30 49 / var(--tw-text-opacity));
 }
 .hero-section {
   background: radial-gradient(circle, #343151 0%, #262445 100%);
@@ -3526,9 +3526,6 @@ header .navbar-menu ul li a:hover{
   .md\:p-5{
     padding: 1.25rem;
   }
-  .md\:p-6{
-    padding: 1.5rem;
-  }
   .md\:p-8{
     padding: 2rem;
   }
@@ -3664,6 +3661,9 @@ header .navbar-menu ul li a:hover{
   }
   .lg\:pr-10{
     padding-right: 2.5rem;
+  }
+  .lg\:pr-12{
+    padding-right: 3rem;
   }
   .lg\:text-xl{
     font-size: 1.25rem;

@@ -15,7 +15,7 @@ header{
             }
             li{
                 a{
-                    @apply text-sm text-white hover:text-secondary font-light relative tracking-wide transition-all duration-500;
+                    @apply text-sm text-white hover:text-primary font-light relative tracking-wide transition-all duration-500;
                     // &:before{
                     //     @apply content-[''] w-12 h-1 rounded-br-xl bg-secondary absolute left-0 -bottom-1 hidden;      
                     // }
