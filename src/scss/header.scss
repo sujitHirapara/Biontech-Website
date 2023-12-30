@@ -1,5 +1,5 @@
 header{
-    @apply fixed top-0 left-0 w-full py-5 md:py-10 transition-all duration-500 z-50;
+    @apply fixed top-0 left-0 w-full py-5 md:py-7 transition-all duration-500 z-50;
     background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
     &.header-fixed{
         @apply py-4 md:py-6 bg-black;
@@ -9,11 +9,13 @@ header{
         @media (max-width: 767px){
             @apply fixed top-0 left-0 w-full h-full md:h-auto p-4 pt-5 bg-black;
         }
-        ul{
+        > ul{
             @media (max-width: 767px){
                 @apply mt-6;
             }
             li{
+                @apply relative md:py-3;
+                .nav-item,
                 a{
                     @apply text-sm text-white hover:text-primary font-light relative tracking-wide transition-all duration-500;
                     // &:before{
@@ -24,6 +26,18 @@ header{
                         // &:before{
                         //     @apply block;
                         // }
+                    }
+                }
+                .submenu{
+                    @apply max-h-0 w-48 md:absolute top-full left-0 z-10 overflow-hidden bg-white shadow-lg rounded-lg transition-all duration-500;
+                    ul{
+                        @apply px-4 py-2 divide-y divide-gray-200;
+                        li{
+                            @apply py-1.5;
+                            a{
+                                @apply text-black hover:text-primary;
+                            }
+                        }
                     }
                 }
             }
