@@ -74,59 +74,68 @@
                         <h2 class="section-heading text-white">Inquiry Form</h2>
                         <div class="flex max-lg:flex-col lg:items-center gap-8 md:gap-16 mt-10">
                             <div class="form-wrapper grow" data-aos="fade-up" data-aos-delay="200">
-                                <form action="">
-                                    <div class="form-top-area bg-white border border-black rounded-t-xl overflow-hidden">
+                                <form action="" action="">
+                                    <div class="form-top-area border border-black border-b-0 rounded-t-xl overflow-hidden">
                                         <div class="flex max-md:flex-col">
                                             <div class="w-full md:w-1/2 border-b md:border-r border-black">
-                                                <input type="text" placeholder="First Name" class="theme-input">
+                                                <input type="text" placeholder="First Name" class="theme-input" name="First Name">
                                             </div>
                                             <div class="w-full md:w-1/2 border-b border-black">
-                                                <input type="text" placeholder="Last Name" class="theme-input">
+                                                <input type="text" placeholder="Last Name" class="theme-input" name="Last Name">
                                             </div>
                                         </div>
                                         <div class="w-full border-b border-black">
-                                            <input type="text" placeholder="Company Name" class="theme-input">
+                                            <input type="text" placeholder="Company Name" class="theme-input" name="Company Name">
                                         </div>
                                         <div class="w-full border-b border-black">
-                                            <input type="tel" placeholder="Phone Number" class="theme-input">
+                                            <input type="tel" placeholder="Phone Number" class="theme-input" name="Phone Number">
                                         </div>
                                         <div class="w-full border-b border-black">
-                                            <input type="email" placeholder="Email" class="theme-input">
+                                            <input type="email" placeholder="Email" class="theme-input" name="Email">
                                         </div>
                                         <div class="w-full">
-                                            <select name="" id="" class="theme-input">
-                                                <option value="">Country</option>
-                                                <option value="">India</option>
-                                                <option value="">UK</option>
-                                                <option value="">USA</option>
-                                                <option value="">UAE</option>
-                                            </select>
+                                            <input type="text" placeholder="Country" class="theme-input" name="Country">
+                                            <!-- <select name="" id="" class="theme-input">
+                                                                    <option value="">Country</option>
+                                                                    <option value="">India</option>
+                                                                    <option value="">UK</option>
+                                                                    <option value="">USA</option>
+                                                                    <option value="">UAE</option>
+                                                                </select> -->
                                         </div>
                                     </div>
-                                    <div class="form-bottom-area bg-white border border-black border-t-0 rounded-b-xl overflow-hidden">
+                                    <!-- <label class="flex items-center space-x-3 py-4 cursor-pointer">
+                                        <input type="checkbox" name="checked-demo" value="1"
+                                            class="form-tick appearance-none h-6 w-6 border border-black rounded-full checked:bg-primary checked:border-transparent focus:outline-none transition-all duration-500">
+                                        <span class="text-sm text-black font-normal">Please mail me a printed brochure.</span>
+                                    </label> -->
+                                    <div class="form-bottom-area border border-black rounded-b-xl overflow-hidden">
                                         <div class="w-full border-b border-black">
-                                            <textarea name="" id="" placeholder="Address" class="theme-input resize-none" rows="1"></textarea>
+                                            <textarea name="" id="" placeholder="Address" name="Address" class="theme-input resize-none block"
+                                                rows="1"></textarea>
                                         </div>
                                         <div class="w-full border-b border-black">
-                                            <select name="" id="" class="theme-input">
-                                                <option value="">State / Province / Region</option>
-                                                <option value="">India</option>
-                                                <option value="">UK</option>
-                                                <option value="">USA</option>
-                                                <option value="">UAE</option>
-                                            </select>
+                                            <input type="text" placeholder="State / Province / Region" name="State" class="theme-input">
+                                            <!-- <select name="" id="" class="theme-input">
+                                                                    <option value="">State / Province / Region</option>
+                                                                    <option value="">India</option>
+                                                                    <option value="">UK</option>
+                                                                    <option value="">USA</option>
+                                                                    <option value="">UAE</option>
+                                                                </select> -->
                                         </div>
                                         <div class="w-full border-b border-black">
-                                            <select name="" id="" class="theme-input">
-                                                <option value="">City</option>
-                                                <option value="">India</option>
-                                                <option value="">UK</option>
-                                                <option value="">USA</option>
-                                                <option value="">UAE</option>
-                                            </select>
+                                            <input type="text" placeholder="City" name="City" class="theme-input">
+                                            <!-- <select name="" id="" class="theme-input">
+                                                                    <option value="">City</option>
+                                                                    <option value="">India</option>
+                                                                    <option value="">UK</option>
+                                                                    <option value="">USA</option>
+                                                                    <option value="">UAE</option>
+                                                                </select> -->
                                         </div>
                                         <div class="w-full">
-                                            <input type="text" placeholder="Pincode" class="theme-input">
+                                            <input type="text" placeholder="Pincode" class="theme-input" name="Pincode">
                                         </div>
                                     </div>
                                     <div class="mt-5">
