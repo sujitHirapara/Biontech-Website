@@ -254,7 +254,7 @@ const slider = $(".slider-item");
 slider
   .slick({
     arrows: false,
-    dots: false,
+    dots: true,
     vertical: true,
     verticalSwiping: true,
     infinite: true,

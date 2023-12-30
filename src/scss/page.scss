@@ -377,3 +377,38 @@
         }
     }
 }
+
+.product-slideshow{
+    ul.slick-dots {
+        width: auto;
+        height: auto;
+        top: 50%;
+        bottom: 30px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+        z-index: 9;
+        li {
+            width: auto;
+            margin: 0;
+            height: auto;
+            &.slick-active{
+                button {
+                    width: 8px;
+                    height: 8px;
+                }
+            }
+            > button {
+                background: #fff;
+                padding: 0;
+                width: 5px;
+                height: 5px;
+                border-radius: 100%;
+                @apply transition-all duration-500;
+            }
+        }
+    }
+}

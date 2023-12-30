@@ -5896,7 +5896,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
 var slider = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".slider-item");
 slider.slick({
   arrows: false,
-  dots: false,
+  dots: true,
   vertical: true,
   verticalSwiping: true,
   infinite: true,
