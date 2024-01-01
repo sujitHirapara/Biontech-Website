@@ -309,33 +309,79 @@
 }
 
 .scrollbar-section{
+    // @apply relative py-10 md:py-28;
+    .scrollbar-inner-slider{
+        @apply m-0;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+        max-height: 100vh;
+        ::-webkit-scrollbar {
+            width: 0px;
+            height: 0px;
+        }
+        .section-padding{
+            scroll-snap-align: center;
+            min-height: var(--body-height);
+            width: 100%;
+            position: sticky;
+            top: 0;
+            @apply flex items-center;
+            // Not needed if 100vh
+            // &:nth-last-child(1) {
+            //     height: 100vh;
+            // }
+            &:nth-child(1):before {
+                background: radial-gradient(circle, rgba(117, 102, 191, 1) 0%, rgba(80, 58, 164, 1) 100%);
+            }
+
+            &:nth-child(2):before {
+                background: radial-gradient(circle, #7696CF 0%, #2E468E 100%);
+            }
+
+            &:nth-child(3):before {
+                background: radial-gradient(circle, #6CB9DF 0%, #318CC5 100%);
+            }
+
+            &:nth-child(4):before {
+                background: radial-gradient(circle, #62CD5F 0%, #0FA22D 100%);
+            }
+
+            &:nth-child(5):before {
+                background: radial-gradient(circle, #82D24D 0%, #51BB08 100%);
+            }
+
+            &:nth-child(6):before {
+                background: radial-gradient(circle, #FFD959 0%, #F2A800 100%);
+            }
+
+            &:nth-child(7):before {
+                background: radial-gradient(circle, #FDEA72 0%, #FACB00 100%);
+            }
+
+            &:nth-child(8):before {
+                background: radial-gradient(circle, #FED856 0%, #F2A800 100%);
+            }
+
+            &:nth-child(9):before {
+                background: radial-gradient(circle, #FDEA72 0%, #FACB00 100%);
+            }
+        }
+    }
+    // .slick-track,
+    // .slick-list{
+    //     @apply overflow-visible;
+    // }
+    // .slick-slide{
+    //     @apply opacity-0;
+    //     &.slick-active{
+    //         @apply opacity-100;
+    //     }
+    // }
     .section-padding{
-        &:nth-child(1){
-            background: radial-gradient(circle, rgba(117,102,191,1) 0%, rgba(80,58,164,1) 100%);
-        }
-        &:nth-child(2){
-            background: radial-gradient(circle, #7696CF 0%, #2E468E 100%);
-        }
-        &:nth-child(3){
-            background: radial-gradient(circle, #6CB9DF 0%, #318CC5 100%);
-        }
-        &:nth-child(4){
-            background: radial-gradient(circle, #62CD5F 0%, #0FA22D 100%);
-        }
-        &:nth-child(5){
-            background: radial-gradient(circle, #82D24D 0%, #51BB08 100%);
-        }
-        &:nth-child(6){
-            background: radial-gradient(circle, #FFD959 0%, #F2A800 100%);
-        }
-        &:nth-child(7){
-            background: radial-gradient(circle, #FDEA72 0%, #FACB00 100%);
-        }
-        &:nth-child(8){
-            background: radial-gradient(circle, #FED856 0%, #F2A800 100%);
-        }
-        &:nth-child(9){
-            background: radial-gradient(circle, #FDEA72 0%, #FACB00 100%);
+        @apply static md:py-20;
+        &:before{
+            content: "";
+            @apply block w-full h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[-1];
         }
     }
     &::-webkit-scrollbar{
