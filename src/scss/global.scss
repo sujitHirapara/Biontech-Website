@@ -47,7 +47,7 @@ img{
 }
 
 .btn{
-    @apply py-3 px-4 md:px-6 bg-primary rounded text-sm font-light text-white inline-block transition hover:bg-black duration-500;
+    @apply py-3 px-4 md:px-6 bg-primary rounded text-sm font-light text-white inline-block outline-none focus:ring-0 focus:outline-none transition hover:bg-black duration-500;
 }
 
 .section-padding{

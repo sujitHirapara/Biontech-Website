@@ -250,29 +250,29 @@ $(document).ready(function() {
 });  
 
 // Product Slideshow
-// const slider = $(".scrollbar-inner-slider");
-// slider
-//   .slick({
-//     arrows: false,
-//     dots: false,
-//     vertical: true,
-//     verticalSwiping: true,
-//     infinite: false,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     // centerMode: true,
-//     // centerPadding: '60px',
-//   });
+const slider = $(".slider-item");
+slider
+  .slick({
+    arrows: false,
+    dots: true,
+    vertical: true,
+    verticalSwiping: true,
+    infinite: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    // centerMode: true,
+    // centerPadding: '60px',
+  });
 
-// slider.on('wheel', (function(e) {
-//   e.preventDefault();
+slider.on('wheel', (function(e) {
+  e.preventDefault();
 
-//   if (e.originalEvent.deltaY < 0) {
-//     $(this).slick('slickPrev');
-//   } else {
-//     $(this).slick('slickNext');
-//   }
-// }));
+  if (e.originalEvent.deltaY < 0) {
+    $(this).slick('slickPrev');
+  } else {
+    $(this).slick('slickNext');
+  }
+}));
 
 // App Height
 const appHeight = () => {

@@ -5893,29 +5893,27 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
 });
 
 // Product Slideshow
-// const slider = $(".scrollbar-inner-slider");
-// slider
-//   .slick({
-//     arrows: false,
-//     dots: false,
-//     vertical: true,
-//     verticalSwiping: true,
-//     infinite: false,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     // centerMode: true,
-//     // centerPadding: '60px',
-//   });
+var slider = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".slider-item");
+slider.slick({
+  arrows: false,
+  dots: true,
+  vertical: true,
+  verticalSwiping: true,
+  infinite: false,
+  slidesToShow: 2,
+  slidesToScroll: 1
+  // centerMode: true,
+  // centerPadding: '60px',
+});
 
-// slider.on('wheel', (function(e) {
-//   e.preventDefault();
-
-//   if (e.originalEvent.deltaY < 0) {
-//     $(this).slick('slickPrev');
-//   } else {
-//     $(this).slick('slickNext');
-//   }
-// }));
+slider.on('wheel', function (e) {
+  e.preventDefault();
+  if (e.originalEvent.deltaY < 0) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).slick('slickPrev');
+  } else {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).slick('slickNext');
+  }
+});
 
 // App Height
 var appHeight = function appHeight() {
