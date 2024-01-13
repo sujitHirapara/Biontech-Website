@@ -734,6 +734,9 @@ video {
 .max-w-4xl{
   max-width: 56rem;
 }
+.max-w-\[100px\]{
+  max-width: 100px;
+}
 .max-w-\[120px\]{
   max-width: 120px;
 }
@@ -1079,6 +1082,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(230 230 230 / var(--tw-bg-opacity));
 }
+.bg-gray-section{
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 51 51 / var(--tw-bg-opacity));
+}
 .bg-gray-true{
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 245 / var(--tw-bg-opacity));
@@ -1133,6 +1140,10 @@ video {
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
+}
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .py-10{
   padding-top: 2.5rem;
@@ -3382,6 +3393,9 @@ header .navbar-menu > ul li .submenu ul li a:hover{
   opacity: 1;
 }
 @media not all and (min-width: 1280px){
+  .max-xl\:\!border-r-transparent{
+    border-right-color: transparent !important;
+  }
   .max-xl\:pr-10{
     padding-right: 2.5rem;
   }
@@ -3699,6 +3713,10 @@ header .navbar-menu > ul li .submenu ul li a:hover{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
+  .md\:py-12{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
   .md\:py-16{
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -3839,9 +3857,20 @@ header .navbar-menu > ul li .submenu ul li a:hover{
   .xl\:max-h-\[680px\]{
     max-height: 680px;
   }
+  .xl\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
   .xl\:gap-20{
     gap: 5rem;
   }
+}
+@media (min-width: 640px){
+  .sm\:\[\&\>\*\:not\(\:last-child\)\]\:border-r>*:not(:last-child){
+    border-right-width: 1px;
+  }
+}
+.\[\&\>\*\]\:border-b>*{
+  border-bottom-width: 1px;
 }
 @media (min-width: 768px){
   .md\:\[\&\>div\]\:flex-row-reverse>div{
