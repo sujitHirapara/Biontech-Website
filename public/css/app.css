@@ -782,6 +782,9 @@ video {
 .shrink-0{
   flex-shrink: 0;
 }
+.shrink{
+  flex-shrink: 1;
+}
 .grow{
   flex-grow: 1;
 }
@@ -820,6 +823,9 @@ video {
 }
 .flex-wrap{
   flex-wrap: wrap;
+}
+.flex-nowrap{
+  flex-wrap: nowrap;
 }
 .items-start{
   align-items: flex-start;
@@ -905,6 +911,12 @@ video {
 }
 .overflow-hidden{
   overflow: hidden;
+}
+.overflow-x-auto{
+  overflow-x: auto;
+}
+.overflow-x-hidden{
+  overflow-x: hidden;
 }
 .whitespace-pre{
   white-space: pre;
@@ -1207,6 +1219,9 @@ video {
 }
 .pt-8{
   padding-top: 2rem;
+}
+.pb-5{
+  padding-bottom: 1.25rem;
 }
 .text-center{
   text-align: center;
@@ -3466,6 +3481,9 @@ header .navbar-menu > ul li .submenu ul li a:hover{
   .max-md\:justify-center{
     justify-content: center;
   }
+  .max-md\:gap-4{
+    gap: 1rem;
+  }
   .max-md\:space-y-6 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
     margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -3644,6 +3662,12 @@ header .navbar-menu > ul li .submenu ul li a:hover{
   .md\:flex-row{
     flex-direction: row;
   }
+  .md\:flex-col{
+    flex-direction: column;
+  }
+  .md\:items-end{
+    align-items: flex-end;
+  }
   .md\:items-center{
     align-items: center;
   }
@@ -3664,6 +3688,9 @@ header .navbar-menu > ul li .submenu ul li a:hover{
   }
   .md\:gap-16{
     gap: 4rem;
+  }
+  .md\:gap-20{
+    gap: 5rem;
   }
   .md\:space-y-10 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
@@ -3872,6 +3899,9 @@ header .navbar-menu > ul li .submenu ul li a:hover{
   .xl\:max-h-\[680px\]{
     max-height: 680px;
   }
+  .xl\:max-w-xl{
+    max-width: 36rem;
+  }
   .xl\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -3914,8 +3944,24 @@ header .navbar-menu > ul li .submenu ul li a:hover{
 .\[\&\>li\>a\]\:duration-500>li>a{
   transition-duration: 500ms;
 }
+.\[\&\>li\]\:mb-2>li{
+  margin-bottom: 0.5rem;
+}
 .\[\&\>li\]\:flex>li{
   display: flex;
+}
+.\[\&\>li\]\:border-b>li{
+  border-bottom-width: 1px;
+}
+.\[\&\>li\]\:border-white>li{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+.\[\&\>li\]\:pb-3>li{
+  padding-bottom: 0.75rem;
+}
+.\[\&\>li\]\:pb-2>li{
+  padding-bottom: 0.5rem;
 }
 @media not all and (min-width: 768px){
   .max-md\:\[\&\>li\]\:flex-col>li{
