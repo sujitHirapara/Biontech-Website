@@ -533,6 +533,9 @@ video {
 .mb-1{
   margin-bottom: 0.25rem;
 }
+.mb-10{
+  margin-bottom: 2.5rem;
+}
 .mb-12{
   margin-bottom: 3rem;
 }
@@ -577,9 +580,6 @@ video {
 }
 .mt-5{
   margin-top: 1.25rem;
-}
-.mb-10{
-  margin-bottom: 2.5rem;
 }
 .block{
   display: block;
@@ -779,11 +779,11 @@ video {
 .flex-shrink-0{
   flex-shrink: 0;
 }
-.shrink-0{
-  flex-shrink: 0;
-}
 .shrink{
   flex-shrink: 1;
+}
+.shrink-0{
+  flex-shrink: 0;
 }
 .grow{
   flex-grow: 1;
@@ -881,6 +881,11 @@ video {
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
+.space-y-2 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
 .space-y-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -914,9 +919,6 @@ video {
 }
 .overflow-x-auto{
   overflow-x: auto;
-}
-.overflow-x-hidden{
-  overflow-x: hidden;
 }
 .whitespace-pre{
   white-space: pre;
@@ -1031,6 +1033,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(125 206 72 / var(--tw-bg-opacity));
 }
+.bg-\[\#CCCCCC\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(204 204 204 / var(--tw-bg-opacity));
+}
 .bg-\[\#D2CEF3\]{
   --tw-bg-opacity: 1;
   background-color: rgb(210 206 243 / var(--tw-bg-opacity));
@@ -1113,10 +1119,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-\[\#CCCCCC\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(204 204 204 / var(--tw-bg-opacity));
-}
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -1168,6 +1170,10 @@ video {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1192,10 +1198,6 @@ video {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.py-12{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
 .\!pb-0{
   padding-bottom: 0px !important;
 }
@@ -1211,6 +1213,9 @@ video {
 .pb-12{
   padding-bottom: 3rem;
 }
+.pb-5{
+  padding-bottom: 1.25rem;
+}
 .pl-4{
   padding-left: 1rem;
 }
@@ -1219,9 +1224,6 @@ video {
 }
 .pt-8{
   padding-top: 2rem;
-}
-.pb-5{
-  padding-bottom: 1.25rem;
 }
 .text-center{
   text-align: center;
@@ -2870,6 +2872,7 @@ header .navbar-menu > ul li .submenu ul li{
   padding-bottom: 0.375rem;
 }
 header .navbar-menu > ul li .submenu ul li a{
+  font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
@@ -3956,9 +3959,6 @@ header .navbar-menu > ul li .submenu ul li a:hover{
 .\[\&\>li\]\:border-white>li{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-.\[\&\>li\]\:pb-3>li{
-  padding-bottom: 0.75rem;
 }
 .\[\&\>li\]\:pb-2>li{
   padding-bottom: 0.5rem;

@@ -35,7 +35,7 @@ header{
                         li{
                             @apply py-1.5;
                             a{
-                                @apply text-black hover:text-primary;
+                                @apply text-black font-medium hover:text-primary;
                             }
                         }
                     }
