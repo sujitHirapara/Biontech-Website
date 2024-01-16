@@ -520,6 +520,10 @@ video {
 .m-1{
   margin: 0.25rem;
 }
+.-mx-2{
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -1119,10 +1123,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-gray-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -1131,13 +1131,13 @@ video {
   -o-object-position: bottom;
      object-position: bottom;
 }
-.object-top{
-  -o-object-position: top;
-     object-position: top;
-}
 .object-center{
   -o-object-position: center;
      object-position: center;
+}
+.object-top{
+  -o-object-position: top;
+     object-position: top;
 }
 .p-1{
   padding: 0.25rem;
@@ -3341,6 +3341,16 @@ header .navbar-menu > ul li .submenu ul li a:hover{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
 }
+
+.featured-carousel .slick-list{
+  overflow: visible;
+}
+.featured-carousel .slick-track{
+  display: flex;
+}
+.featured-carousel .slick-slide > *{
+  height: 100%;
+}
 .before\:absolute::before{
   content: var(--tw-content);
   position: absolute;
@@ -3404,6 +3414,10 @@ header .navbar-menu > ul li .submenu ul li a:hover{
 .hover\:bg-primary:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(168 30 49 / var(--tw-bg-opacity));
+}
+.hover\:text-primary:hover{
+  --tw-text-opacity: 1;
+  color: rgb(168 30 49 / var(--tw-text-opacity));
 }
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
@@ -3812,6 +3826,9 @@ header .navbar-menu > ul li .submenu ul li a:hover{
   }
 }
 @media (min-width: 1024px){
+  .lg\:bottom-20{
+    bottom: 5rem;
+  }
   .lg\:left-1\/2{
     left: 50%;
   }

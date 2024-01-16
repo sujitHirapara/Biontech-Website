@@ -458,3 +458,15 @@
         }
     }
 }
+
+.featured-carousel{
+    .slick-list{
+        @apply overflow-visible;
+    }
+    .slick-track{
+        @apply flex;
+    }
+    .slick-slide > *{
+        @apply h-full;
+    }
+}
