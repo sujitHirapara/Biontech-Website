@@ -508,6 +508,15 @@ video {
 .top-36{
   top: 9rem;
 }
+.-bottom-10{
+  bottom: -2.5rem;
+}
+.-bottom-6{
+  bottom: -1.5rem;
+}
+.-bottom-20{
+  bottom: -5rem;
+}
 .z-10{
   z-index: 10;
 }
@@ -516,6 +525,9 @@ video {
 }
 .z-\[9\]{
   z-index: 9;
+}
+.z-\[-1\]{
+  z-index: -1;
 }
 .m-1{
   margin: 0.25rem;
@@ -1332,6 +1344,9 @@ video {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .transition-all{
   transition-property: all;
@@ -3529,6 +3544,9 @@ header .navbar-menu > ul li .submenu ul li a:hover{
   }
   .max-md\:mt-3{
     margin-top: 0.75rem;
+  }
+  .max-md\:-mt-16{
+    margin-top: -4rem;
   }
   .max-md\:hidden{
     display: none;
