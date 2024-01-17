@@ -29,7 +29,7 @@ header{
                     }
                 }
                 .submenu{
-                    @apply max-h-0 w-48 md:absolute top-full left-0 z-10 overflow-hidden bg-white shadow-lg rounded-lg transition-all duration-500;
+                    @apply max-h-0 w-52 md:absolute top-full left-0 z-10 overflow-hidden bg-white shadow-lg rounded-lg transition-all duration-500;
                     ul{
                         @apply px-4 py-2 divide-y divide-gray-200;
                         li{
