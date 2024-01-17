@@ -1135,6 +1135,14 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-\[\#F49828\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 152 40 / var(--tw-bg-opacity));
+}
+.\!bg-\[\#F49828\]{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(244 152 40 / var(--tw-bg-opacity)) !important;
+}
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -1299,6 +1307,9 @@ video {
 }
 .font-semibold{
   font-weight: 600;
+}
+.\!font-semibold{
+  font-weight: 600 !important;
 }
 .\!leading-snug{
   line-height: 1.375 !important;
@@ -4004,6 +4015,14 @@ header .navbar-menu > ul li .submenu ul li a:hover{
     padding-top: 15rem;
     padding-bottom: 15rem;
   }
+}
+.\[\&\:not\(\:hover\)\]\:\!bg-\[\#F49828\]:not(:hover){
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(244 152 40 / var(--tw-bg-opacity)) !important;
+}
+.\[\&\:not\(\:hover\)\]\:text-black:not(:hover){
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 @media (min-width: 640px){
   .sm\:\[\&\>\*\:not\(\:last-child\)\]\:border-r>*:not(:last-child){
