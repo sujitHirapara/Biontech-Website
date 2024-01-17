@@ -165,15 +165,15 @@
 
 .slick-dots-bottom{
     .slick-dots{
-        @apply h-auto bg-transparent p-0 bottom-0 left-1/2 -translate-x-1/2 justify-center gap-4;
+        @apply h-auto bg-transparent p-0 bottom-0 left-1/2 -translate-x-1/2 justify-center gap-1.5 sm:gap-4;
         li{
             &.slick-active{
                 button{
-                    @apply bg-primary w-3.5 h-3.5;
+                    @apply bg-primary w-2.5 md:w-3.5 h-2.5 md:h-3.5;
                 }
             }
             button{
-                @apply bg-gray-dark w-2.5 h-2.5 opacity-100;
+                @apply bg-gray-dark w-1.5 md:w-2.5 h-1.5 md:h-2.5 opacity-100;
             }
         }
     }
@@ -460,6 +460,9 @@
 }
 
 .featured-carousel{
+    &:not(.slick-initialized){
+        @apply flex;
+    }
     .slick-list{
         @apply overflow-visible;
     }

@@ -9,6 +9,7 @@ window.jQuery = jQuery;
 AOS.init({
   once: false,
   duration: 600,
+  disable: 'mobile'
 });
 
 // fancy box
@@ -32,7 +33,7 @@ $(".navbar-toggler").click(function () {
 $('.clients-slider').slick({
     infinite: true,
     slidesToShow: 6,
-    slidesToScroll: 2,
+    slidesToScroll: 6,
     arrows: true,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -48,21 +49,21 @@ $('.clients-slider').slick({
         breakpoint: 1024,
         settings: {
         slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToScroll: 3,
         }
     },
     {
         breakpoint: 767,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
         }
     },
     {
         breakpoint: 576,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
         }
     },
     ]
@@ -124,7 +125,9 @@ $(document).ready(function($) {
 		// adaptiveHeight: true,
 		pauseOnFocus: false,
 		pauseOnHover: false,
-	});
+	}).on('setPosition', function (event, slick) {
+    slick.$slides.css('height', slick.$slideTrack.height() + 'px');
+});
 
 	function progressBar(){
 		$('.slider-progress').find('span').removeAttr('style');

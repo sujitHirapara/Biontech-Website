@@ -5675,7 +5675,8 @@ window.$ = (jquery__WEBPACK_IMPORTED_MODULE_0___default());
 window.jQuery = jQuery;
 aos__WEBPACK_IMPORTED_MODULE_2___default().init({
   once: false,
-  duration: 600
+  duration: 600,
+  disable: 'mobile'
 });
 
 // fancy box
@@ -5696,7 +5697,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(".navbar-toggler").click(function 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()('.clients-slider').slick({
   infinite: true,
   slidesToShow: 6,
-  slidesToScroll: 2,
+  slidesToScroll: 6,
   arrows: true,
   autoplay: true,
   autoplaySpeed: 2000,
@@ -5710,19 +5711,19 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.clients-slider').slick({
     breakpoint: 1024,
     settings: {
       slidesToShow: 3,
-      slidesToScroll: 1
+      slidesToScroll: 3
     }
   }, {
     breakpoint: 767,
     settings: {
       slidesToShow: 2,
-      slidesToScroll: 1
+      slidesToScroll: 2
     }
   }, {
     breakpoint: 576,
     settings: {
       slidesToShow: 2,
-      slidesToScroll: 1
+      slidesToScroll: 2
     }
   }]
 });
@@ -5778,6 +5779,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function ($) {
     // adaptiveHeight: true,
     pauseOnFocus: false,
     pauseOnHover: false
+  }).on('setPosition', function (event, slick) {
+    slick.$slides.css('height', slick.$slideTrack.height() + 'px');
   });
   function progressBar() {
     $('.slider-progress').find('span').removeAttr('style');
