@@ -44,3 +44,22 @@ header{
         }
     }
 }
+
+.header-dark{
+    header{
+        &:not(&.header-fixed){
+            @apply sticky top-0 left-0;
+            background: #000;
+            // .navbar-menu{
+            //     >ul{
+            //         li{
+            //             a,.nav-item{
+            //                 @apply text-black;
+            //             }
+            //         }
+            //     }
+            // }
+        }
+    }
+
+}
