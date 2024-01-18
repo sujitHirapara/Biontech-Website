@@ -703,6 +703,9 @@ video {
 .max-h-\[800px\]{
   max-height: 800px;
 }
+.max-h-11{
+  max-height: 2.75rem;
+}
 .min-h-screen{
   min-height: 100vh;
 }
