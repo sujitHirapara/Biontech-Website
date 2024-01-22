@@ -74,6 +74,7 @@ $('.featured-carousel').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
+    infinite: false,
     dots: false,
     responsive: [
     {

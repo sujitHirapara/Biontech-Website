@@ -5733,6 +5733,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.featured-carousel').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   arrows: true,
+  infinite: false,
   dots: false,
   responsive: [{
     breakpoint: 1024,
