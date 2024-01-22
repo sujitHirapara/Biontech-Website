@@ -5931,7 +5931,7 @@ slider.slick({
   dots: true,
   vertical: true,
   verticalSwiping: true,
-  infinite: false,
+  infinite: true,
   slidesToShow: 2,
   slidesToScroll: 1
   // centerMode: true,
