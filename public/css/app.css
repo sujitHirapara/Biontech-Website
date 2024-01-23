@@ -526,6 +526,12 @@ video {
 .left-1\/4{
   left: 25%;
 }
+.right-20{
+  right: 5rem;
+}
+.bottom-20{
+  bottom: 5rem;
+}
 .z-10{
   z-index: 10;
 }
@@ -819,6 +825,9 @@ video {
 }
 .max-w-xs{
   max-width: 20rem;
+}
+.max-w-\[280px\]{
+  max-width: 280px;
 }
 .flex-1{
   flex: 1 1 0%;
@@ -3772,6 +3781,12 @@ header .navbar-menu > ul li .submenu ul li a:hover{
   }
   .md\:bottom-56{
     bottom: 14rem;
+  }
+  .md\:right-20{
+    right: 5rem;
+  }
+  .md\:bottom-0{
+    bottom: 0px;
   }
   .md\:my-16{
     margin-top: 4rem;
