@@ -523,6 +523,9 @@ video {
 .right-1\/4{
   right: 25%;
 }
+.left-1\/4{
+  left: 25%;
+}
 .z-10{
   z-index: 10;
 }
