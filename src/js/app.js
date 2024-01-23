@@ -108,8 +108,8 @@ $('.product-slider').slick({
     slidesToShow: 1,
     dots: false,
     arrows: false,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 2000,
     infinite: true,
 });
 

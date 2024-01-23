@@ -325,6 +325,7 @@
             width: 100%;
             position: sticky;
             top: 0;
+            background: radial-gradient(circle, rgba(117, 102, 191, 1) 0%, rgba(80, 58, 164, 1) 100%);
             @apply flex items-center;
             // Not needed if 100vh
             // &:nth-last-child(1) {

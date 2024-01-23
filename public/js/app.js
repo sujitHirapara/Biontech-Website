@@ -5763,8 +5763,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.product-slider').slick({
   slidesToShow: 1,
   dots: false,
   arrows: false,
-  // autoplay: true,
-  // autoplaySpeed: 2000,
+  autoplay: true,
+  autoplaySpeed: 2000,
   infinite: true
 });
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function ($) {
