@@ -601,6 +601,9 @@ video {
 .mt-5{
   margin-top: 1.25rem;
 }
+.mb-6{
+  margin-bottom: 1.5rem;
+}
 .block{
   display: block;
 }
@@ -669,6 +672,9 @@ video {
 }
 .h-screen{
   height: 100vh;
+}
+.h-40{
+  height: 10rem;
 }
 .max-h-10{
   max-height: 2.5rem;
@@ -1175,6 +1181,10 @@ video {
 }
 .to-\[\#21B038\]{
   --tw-gradient-to: #21B038 var(--tw-gradient-to-position);
+}
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .object-cover{
   -o-object-fit: cover;
@@ -3893,6 +3903,11 @@ header .navbar-menu > ul li .submenu ul li a:hover{
     --tw-space-y-reverse: 0;
     margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+  }
+  .md\:space-y-5 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
   }
   .md\:border-r{
     border-right-width: 1px;
