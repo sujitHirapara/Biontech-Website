@@ -5,19 +5,19 @@ header{
         @apply py-4 md:py-6 bg-black;
     }
     .navbar-menu{
-        @apply flex-grow hidden md:block;
-        @media (max-width: 767px){
-            @apply fixed top-0 left-0 w-full h-full md:h-auto p-4 pt-5 bg-black;
+        @apply flex-grow hidden lg:block;
+        @media (max-width: 1023px){
+            @apply fixed top-0 left-0 w-full h-full lg:h-auto p-4 pt-5 bg-black;
         }
         > ul{
-            @media (max-width: 767px){
+            @media (max-width: 1023px){
                 @apply mt-6;
             }
             li{
-                @apply relative md:py-3;
+                @apply relative lg:py-3;
                 .nav-item,
                 a{
-                    @apply text-sm text-white hover:text-primary font-light relative tracking-wide transition-all duration-500;
+                    @apply text-xs 2xl:text-sm text-white hover:text-primary font-light relative tracking-wide transition-all duration-500;
                     // &:before{
                     //     @apply content-[''] w-12 h-1 rounded-br-xl bg-secondary absolute left-0 -bottom-1 hidden;      
                     // }
@@ -29,7 +29,7 @@ header{
                     }
                 }
                 .submenu{
-                    @apply max-h-0 w-52 md:absolute top-full left-0 z-10 overflow-hidden bg-white shadow-lg rounded-lg transition-all duration-500;
+                    @apply max-h-0 w-52 lg:absolute top-full left-0 z-10 overflow-hidden bg-white shadow-lg rounded-lg transition-all duration-500;
                     ul{
                         @apply px-4 py-2 divide-y divide-gray-200;
                         li{
