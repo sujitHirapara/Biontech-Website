@@ -199,6 +199,8 @@ $(document).ready(function(){
     fade: true,
     infinite: true,
     speed: 400,
+    autoplay: true,
+    autoplaySpeed: 2000,
   });
 
  $('.timelineSliderNav')
@@ -212,6 +214,8 @@ $(document).ready(function(){
     arrows: false,
  		focusOnSelect: false,
  		infinite: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
  		responsive: [{
  			breakpoint: 1024,
  			settings: {

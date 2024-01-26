@@ -574,6 +574,9 @@ video {
 .mb-5{
   margin-bottom: 1.25rem;
 }
+.mb-6{
+  margin-bottom: 1.5rem;
+}
 .ml-auto{
   margin-left: auto;
 }
@@ -600,9 +603,6 @@ video {
 }
 .mt-5{
   margin-top: 1.25rem;
-}
-.mb-6{
-  margin-bottom: 1.5rem;
 }
 .block{
   display: block;
@@ -640,6 +640,9 @@ video {
 .h-28{
   height: 7rem;
 }
+.h-40{
+  height: 10rem;
+}
 .h-5{
   height: 1.25rem;
 }
@@ -672,9 +675,6 @@ video {
 }
 .h-screen{
   height: 100vh;
-}
-.h-40{
-  height: 10rem;
 }
 .max-h-10{
   max-height: 2.5rem;
@@ -3368,24 +3368,27 @@ header .navbar-menu > ul li .submenu ul li a:hover{
   background: radial-gradient(circle, #7696CF 0%, #2E468E 100%);
 }
 .scrollbar-section .scrollbar-inner-slider .section-padding:nth-child(3):before {
-  background: radial-gradient(circle, #6CB9DF 0%, #318CC5 100%);
+  background: radial-gradient(circle, #4b50d5 0%, #318CC5 100%);
 }
 .scrollbar-section .scrollbar-inner-slider .section-padding:nth-child(4):before {
-  background: radial-gradient(circle, #62CD5F 0%, #0FA22D 100%);
+  background: radial-gradient(circle, #6CB9DF 0%, #318CC5 100%);
 }
 .scrollbar-section .scrollbar-inner-slider .section-padding:nth-child(5):before {
-  background: radial-gradient(circle, #82D24D 0%, #51BB08 100%);
+  background: radial-gradient(circle, #62CD5F 0%, #0FA22D 100%);
 }
 .scrollbar-section .scrollbar-inner-slider .section-padding:nth-child(6):before {
-  background: radial-gradient(circle, #FFD959 0%, #F2A800 100%);
+  background: radial-gradient(circle, #82D24D 0%, #51BB08 100%);
 }
 .scrollbar-section .scrollbar-inner-slider .section-padding:nth-child(7):before {
-  background: radial-gradient(circle, #FDEA72 0%, #FACB00 100%);
+  background: radial-gradient(circle, #FFD959 0%, #F2A800 100%);
 }
 .scrollbar-section .scrollbar-inner-slider .section-padding:nth-child(8):before {
-  background: radial-gradient(circle, #FED856 0%, #F2A800 100%);
+  background: radial-gradient(circle, #FDEA72 0%, #FACB00 100%);
 }
 .scrollbar-section .scrollbar-inner-slider .section-padding:nth-child(9):before {
+  background: radial-gradient(circle, #FED856 0%, #F2A800 100%);
+}
+.scrollbar-section .scrollbar-inner-slider .section-padding:nth-child(10):before {
   background: radial-gradient(circle, #FDEA72 0%, #FACB00 100%);
 }
 .scrollbar-section .section-padding{
@@ -3808,6 +3811,9 @@ header .navbar-menu > ul li .submenu ul li a:hover{
   .md\:h-96{
     height: 24rem;
   }
+  .md\:h-\[500px\]{
+    height: 500px;
+  }
   .md\:h-screen{
     height: 100vh;
   }
@@ -3899,15 +3905,15 @@ header .navbar-menu > ul li .submenu ul li a:hover{
     margin-top: calc(3.5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(3.5rem * var(--tw-space-y-reverse));
   }
-  .md\:space-y-8 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-y-reverse: 0;
-    margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(2rem * var(--tw-space-y-reverse));
-  }
   .md\:space-y-5 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
     margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+  }
+  .md\:space-y-8 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2rem * var(--tw-space-y-reverse));
   }
   .md\:border-r{
     border-right-width: 1px;

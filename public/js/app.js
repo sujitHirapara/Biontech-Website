@@ -5844,7 +5844,9 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     arrows: false,
     fade: true,
     infinite: true,
-    speed: 400
+    speed: 400,
+    autoplay: true,
+    autoplaySpeed: 2000
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.timelineSliderNav').on('init', function (event, slick) {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()('.timelineSliderNav .slick-slide.slick-current').addClass('is-active');
@@ -5855,6 +5857,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     arrows: false,
     focusOnSelect: false,
     infinite: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
     responsive: [{
       breakpoint: 1024,
       settings: {
