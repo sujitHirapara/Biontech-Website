@@ -676,6 +676,9 @@ video {
 .h-screen{
   height: 100vh;
 }
+.h-7{
+  height: 1.75rem;
+}
 .max-h-10{
   max-height: 2.5rem;
 }
@@ -1310,6 +1313,9 @@ video {
 }
 .pt-8{
   padding-top: 2rem;
+}
+.pb-2{
+  padding-bottom: 0.5rem;
 }
 .text-center{
   text-align: center;
@@ -3894,6 +3900,9 @@ header .navbar-menu > ul li .submenu ul li a:hover{
   }
   .md\:gap-4{
     gap: 1rem;
+  }
+  .md\:gap-6{
+    gap: 1.5rem;
   }
   .md\:space-y-10 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
